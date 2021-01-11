@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>General Store</h1>
+    <p class="lead">Just a basic page about a basic General Store</p>
+    <p>@Html.ActionLink("Learn More About Us", "About")</p>
+    <!-- default   <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>    -->
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Products</h2>
+        <p>
+            Our General Store, located in rural Indiana, is host to a multitude of fine food and items of distinction.<br />
+            Come browse our products and see what we have for you.
+        </p>
+        <p>@Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })</p>
+        <!-- default  <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p> -->
+
+    </div>
+    <div class="col-md-4">
+        <h2>Customers</h2>
+        <p>Access customer pages.</p>
+        <p>@Html.ActionLink("View Customers","Index", "Customer", null, new { @class = "btn btn-primary btn-large" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Transactions</h2>
+        <p>Access the Transaction page</p>
+        <p>@Html.ActionLink("View Transactions", "Index", "Transaction", null, new { @class = "btn btn-primary btn-large" })</p>
+    </div>
+</div>
